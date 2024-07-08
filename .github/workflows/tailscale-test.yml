@@ -24,6 +24,10 @@ jobs:
           tags: tag:actions
           version: 1.68.2
 
-      - name: show ip
+      - name: store ip in env
         run:
-          tailscale ip -4
+          echo "TS_IP=${tailscale ip -4}" >> $GITHUB_ENV
+
+      - name: retrieve env
+        run: |
+          echo "The value of TS_IP is $TS_IP"
