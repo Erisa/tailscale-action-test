@@ -35,4 +35,4 @@ jobs:
           
       - name: run curl
         run: |
-          curl -vvv http://100.116.116.54
+          sleep 10s && curl -vvv http://100.116.116.54
