@@ -20,13 +20,13 @@ jobs:
         run: mkdir -p /tmp/tailscale-tmp
 
       - name: Tailscale Action
-        uses: tailscale/github-action@v2
+        uses: tailscale/github-action@knyar/statedir
         with:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
-          tailscaled-args: --statedir=/tmp/tailscale-tmp
           tags: tag:actions
           version: 1.42.0
+          statedir: /tmp/tailscale-state
 
       - name: bug report
         run: tailscale bugreport
