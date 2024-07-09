@@ -26,6 +26,7 @@ jobs:
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:container
           version: 1.42.0
+          statedir: /tmp/tailscale-state/
 
       - name: bug report
         run: tailscale bugreport
