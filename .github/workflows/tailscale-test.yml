@@ -31,3 +31,8 @@ jobs:
       - name: retrieve env
         run: |
           echo "The value of TS_IP is $TS_IP"
+
+          
+      - name: run curl
+        run: |
+          curl -vvv http://100.116.116.54
