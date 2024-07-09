@@ -22,7 +22,7 @@ jobs:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:actions
-          version: 1.68.2
+          version: 1.42.0
 
       - name: store ip in env
         run:
@@ -35,4 +35,4 @@ jobs:
           
       - name: run curl
         run: |
-          sleep 10s && curl -vvv http://100.116.116.54
+          curl -vvv http://100.116.116.54
