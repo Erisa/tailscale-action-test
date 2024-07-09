@@ -24,7 +24,7 @@ jobs:
         with:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
-          tags: tag:actions
+          tags: tag:container
           version: 1.42.0
 
       - name: bug report
