@@ -28,6 +28,9 @@ jobs:
           tags: tag:actions
           version: 1.42.0
 
+      - name: bug report
+        run: tailscale bugreport
+
       - name: store ip in env
         run:
           echo "TS_IP=$(tailscale ip -4)" >> $GITHUB_ENV
