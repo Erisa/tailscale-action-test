@@ -20,11 +20,11 @@ jobs:
         run: mkdir -p /tmp/tailscale-tmp
 
       - name: Tailscale Action
-        uses: tailscale/github-action@v2
+        uses: tailscale/github-action@main
         with:
           authkey: ${{ secrets.TS_AUTHKEY }}
           tags: tag:container
-          version: 1.76.1
+          version: 1.76.6
           statedir: /tmp/tailscale-state/
 
       - name: bug report
