@@ -21,7 +21,7 @@ jobs:
         with:
           authkey: ${{ secrets.TS_AUTHKEY }}
           tags: tag:container
-          version: 1.78.3
+          version: 1.78.1
           statedir: /tmp/tailscale-state/
 
       - name: bug report
