@@ -23,6 +23,7 @@ jobs:
           tags: tag:container
           version: 1.82.0
           statedir: /tmp/tailscale-state/
+          use-cache: 'true'
 
       - name: bug report
         run: tailscale bugreport
