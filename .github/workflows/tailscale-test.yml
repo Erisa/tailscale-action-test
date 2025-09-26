@@ -39,3 +39,7 @@ jobs:
       - name: run curl
         run: |
           curl -vvv http://100.116.116.54
+
+      - name: logout
+        run: |
+          tailscale logout
