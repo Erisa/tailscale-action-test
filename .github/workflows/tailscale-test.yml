@@ -21,7 +21,7 @@ jobs:
         with:
           authkey: ${{ secrets.TS_AUTHKEY }}
           tags: tag:container
-          version: 1.82.0
+          version: 1.88.3
           statedir: /tmp/tailscale-state/
           use-cache: 'true'
 
