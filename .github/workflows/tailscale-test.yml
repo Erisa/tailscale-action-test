@@ -42,4 +42,4 @@ jobs:
 
       - name: logout
         run: |
-          tailscale logout
+          sudo tailscale logout
