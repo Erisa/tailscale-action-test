@@ -19,8 +19,9 @@ jobs:
       - name: Tailscale Action
         uses: tailscale/github-action@main
         with:
-          authkey: ${{ secrets.TS_AUTHKEY }}
-          tags: tag:container
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          audience: ${{ secrets.TS_AUDIENCE }}
+          tags: tag:actions
           version: 1.98.4
           statedir: /tmp/tailscale-state/
           use-cache: 'true'
@@ -38,7 +39,7 @@ jobs:
 
       - name: run curl
         run: |
-          curl -vvv http://100.116.116.54
+          curl -vvv http://100.119.65.78
 
       - name: logout
         run: |
