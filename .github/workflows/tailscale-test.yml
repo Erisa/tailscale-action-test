@@ -42,7 +42,7 @@ jobs:
 
       - name: run curl
         run: |
-          curl -vvv http://100.119.65.78
+          curl -vvv http://100.91.37.103
 
       - name: logout
         run: |
