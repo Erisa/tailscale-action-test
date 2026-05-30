@@ -9,6 +9,9 @@ on:
     branches:
       - '*'
 
+permissions:
+  id-token: write # This is required for the Tailscale action to request a JWT from GitHub
+
 jobs:
   build:
     runs-on: ubuntu-latest
