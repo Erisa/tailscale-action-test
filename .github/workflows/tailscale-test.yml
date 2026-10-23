@@ -25,7 +25,7 @@ jobs:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
           audience: ${{ secrets.TS_AUDIENCE }}
           tags: tag:actions
-          version: 1.98.4
+          version: 1.104.2
           statedir: /tmp/tailscale-state/
           use-cache: 'true'
 
